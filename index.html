@@ -4,24 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
-    <link rel="stylesheet" href="index.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="name">
-                <h1 style="margin: 0;">Isaac</h1>
+        <!-- Barra de navegação responsiva -->
+        <nav >
+            <div class="container">
+                <a class="navbar-brand" href="#">Isaac</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Skills</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <ul class="opcoes">
-                <li>Home</li>
-                <li>About me</li>
-                <li>Projects</li>
-                <li>Skills</li>
-            </ul>
         </nav>
-       
     </header>
-    <main></main>
-    <footer></footer>
+
+    <main>
+        <!-- Conteúdo principal do site -->
+    </main>
+
+    <footer>
+        <!-- Rodapé -->
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
