@@ -25,38 +25,54 @@
       .nav-link:hover {
         color: orange;
       }
-      .navbar-nav{
-        width: 80vh;
+      .collapse {
+        display: grid;
       }
     </style>
   </head>
   <body>
+    <header>
+        <nav class="navbar navbar-expand-lg px-3">
+            <div class="container-fluid">
+              <a class="navbar-brand fs-2" href="#">Isaac</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link fs-5 me-4" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5 me-4" href="#scrollspyHeading2">About me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5 me-4" href="#scrollspyHeading2">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" href="#scrollspyHeading2">Skills</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
     
-    <nav class="navbar navbar-expand-lg px-3">
-      <div class="container-fluid">
-        <a class="navbar-brand fs-2" href="#">Isaac Pereira</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<section class="start-section py-5">
+    <div class="container">
+      <div class="row align-items-center">
         
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link fs-5 me-4" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5 me-4" href="#scrollspyHeading2">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5 me-4" href="#scrollspyHeading2">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-5" href="#scrollspyHeading2">Skills</a>
-            </li>
-          </ul>
+        <div class="col-lg-6 text-center text-lg-start">
+          <h1 class="display-4 fw-bold">Isaac Pereira</h1>
+          <h2 class="">Developer of Systems</h2>
         </div>
+  
       </div>
-    </nav>
-
+    </div>
+  </section>
+  
+    </main>
   </body>
 </html>
