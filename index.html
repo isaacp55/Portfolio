@@ -1,49 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio</title>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <!-- Barra de navegação responsiva -->
-        <nav >
-            <div class="container">
-                <a class="navbar-brand" href="#">Isaac</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Skills</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfólio</title>
 
-    <main>
-        <!-- Conteúdo principal do site -->
-    </main>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Fonte personalizada -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">  
+    
+    <!-- Bootstrap JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
 
-    <footer>
-        <!-- Rodapé -->
-    </footer>
+    <style>
+      .navbar-brand {
+        font-family: "Anton", sans-serif;
+        color: #c6726b;
+      }
+      .nav-link {
+        color: black;
+      }
+      .nav-link:hover {
+        color: orange;
+      }
+      .collapse {
+        display: grid;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg px-3">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-2" href="#">Isaac Pereira</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="#scrollspyHeading2">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="#scrollspyHeading2">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-5" href="#scrollspyHeading2">Skills</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
