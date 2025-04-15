@@ -28,9 +28,7 @@
       .nav-link {
         color: black;
       }
-      .nav-link:hover {
-        color: orange;
-      }
+     
       .collapse {
         display: grid;
       }
@@ -46,17 +44,21 @@
       #float:hover {
         transform: translateY(-8px);
       }
+      
+      #color{
+        background-image: #212529;
+      }
 
       main {
         padding-top: 100px; /* Espaço para o menu fixo */
       }
     </style>
   </head>
-  <body>
+  <body style="background-color: #2f5b57;">
     <header>
-      <nav class="navbar navbar-expand-lg px-3 fixed-top bg-white shadow-sm">
+      <nav class="navbar navbar-expand-lg px-3 fixed-top shadow-sm" style="color: #2f5b57;">
         <div class="container-fluid">
-          <a class="navbar-brand fs-2" href="#">Isaac Pereira</a>
+          <a class="navbar-brand fs-2 ms-5" href="#" style="color: #212529; font-weight: 100;"> Isaac</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -64,16 +66,16 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link fs-5 me-4" href="#">Home</a>
+                <a class="nav-link fs-5 me-4" href="#" style="font-weight: 600;">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5 me-4" href="#scrollspyHeading2">About me</a>
+                <a class="nav-link fs-5 me-4" href="#scrollspyHeading2" style="font-weight: 600;">About me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5 me-4" href="#scrollspyHeading2">Projects</a>
+                <a class="nav-link fs-5 me-4" href="#scrollspyHeading2" style="font-weight: 600;">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fs-5" href="#skills" style="scroll-behavior: smooth;">Skills</a>
+                <a class="nav-link fs-5" href="#skills" style="scroll-behavior: smooth; font-weight: 600;" >Skills</a>
               </li>
             </ul>
           </div>
@@ -81,18 +83,18 @@
       </nav>
     </header>
 
-    <main class="container py-5">
+    <main class="container py-8 " >
       <div class="text-center col-sm-6 col-lg-3">
-        <h1 style="font-size: 8vh; white-space: nowrap;">Isaac Pereira</h1>
-        <p style="text-align: justify;">Developer of Systems</p>
+        <h1 style="font-size: 8vh; white-space: nowrap; font-weight: 700;">Isaac Pereira</h1>
+        <h3 style="white-space: nowrap;">Developer of Systems</h3>
       </div>
 
       <div class="row">
         <div class="col-md-6 mb-4 mb-md-0 text-center">
-          <img src="images/profile.jpg" class="img-fluid rounded w-80 border border-2" style="height: 500px; object-fit: cover;" alt="Isaac">
+          <img src="images/profile.jpg" class="img-fluid rounded w-80 border border-2 bg-black" style="height: 500px; object-fit: cover;" alt="Isaac">
         </div>
         <div class="col-md-6 col-sm-6 text-center">
-          <h1>About me</h1>
+          <h1 style="font-size: 8vh; width: 100;">About me</h1>
           <p>• Graduando em Análise e Desenvolvimento de Sistemas.</p>
           <p>• Estudando Java.</p>
           <a href="https://www.linkedin.com/in/isaac-pereira-77648b233/" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" fill="" class="bi bi-github" viewBox="0 0 16 16">
@@ -112,9 +114,9 @@
         <div class="row g-4">
 
           <div id="float" class="col-12 col-sm-6 col-md-4 col-lg-3">
-            <div class="card text-center p-3 bg-black text-white">
+            <div class="card text-center p-3 text-white" style="background-color: black;">
               <div class="card-body">
-                <i class="fa-brands fa-html5 fs-1" style="color: orange"></i>
+                <i class="fa-brands fa-html5 fs-1" style="color:#FF5722"></i>
                 <h5 class="card-title mt-3">HTML5</h5>
               </div>
             </div>
