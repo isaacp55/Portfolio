@@ -43,6 +43,22 @@
       #float:hover {
         transform: translateY(-8px);
       }
+
+          .fade-section {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    .fade-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .main-section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
     
       main {
         padding-top: 100px; /* Espaço para o menu fixo */
@@ -78,8 +94,8 @@
       </nav>
     </header>
 
-    <main class="container py-8 " >
-      <div class="text-center col-sm-6 col-lg-3">
+    <main class="container py-8" >
+      <div class="text-center col-sm-6 col-lg-3  main-section">
         <h1 style="font-size: 8vh; white-space: nowrap; font-weight: 700;">Isaac Pereira</h1>
         <h3 style="white-space: nowrap;">Developer of Systems</h3>
       </div>
@@ -104,11 +120,11 @@
         </div>
       </div>
 
-      <h1  id="skills" class="text-center my-5">Technologies</h1>
-      <div class="container">
+      <h1 id="skills" class="text-center my-5 fade-section">Technologies</h1>
+      <div class="container fade-section">
         <div class="row g-4">
 
-          <div id="float" class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div id="float" class="col-12 col-sm-6 col-md-4 col-lg-3 fade-in">
             <div class="card text-center p-3 text-white" style="background-color: black;">
               <div class="card-body">
                 <i class="fa-brands fa-html5 fs-1" style="color:#FF5722"></i>
@@ -117,7 +133,7 @@
             </div>
           </div>
 
-          <div id="float" class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div id="float" class="col-12 col-sm-6 col-md-4 col-lg-3 fade-in">
             <div class="card text-center p-3 bg-black text-white">
               <div class="card-body">
                 <i class="fa-brands fa-css3-alt fs-1 text-primary"></i>
@@ -126,7 +142,7 @@
             </div>
           </div>
 
-          <div id="float" class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div id="float" class="col-12 col-sm-6 col-md-4 col-lg-3 fade-in">
             <div class="card text-center p-3 bg-black text-white">
               <div class="card-body">
                 <i class="fa-brands fa-js fs-1 text-warning"></i>
@@ -135,7 +151,7 @@
             </div>
           </div>
 
-          <div id="float" class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div id="float" class="col-12 col-sm-6 col-md-4 col-lg-3 fade-in">
             <div class="card text-center p-3 bg-black text-white">
               <div class="card-body">
                 <i class="bi bi-bootstrap-fill fs-1" style="color: #7952b3;"></i>
@@ -144,7 +160,7 @@
             </div>
           </div>
 
-          <div id="float" class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div id="float" class="col-12 col-sm-6 col-md-4 col-lg-3 fade-in">
             <div class="card text-center p-3 bg-black text-white">
               <div class="card-body">
                 <i class="fa-brands fa-java fs-1 text-danger"></i>
@@ -153,7 +169,7 @@
             </div>
           </div>
 
-          <div id="float" class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div id="float" class="col-12 col-sm-6 col-md-4 col-lg-3 fade-in">
             <div class="card text-center p-3 bg-black text-white">
               <div class="card-body">
                 <i class="fa-solid fa-database fs-1 text-info"></i>
@@ -165,5 +181,6 @@
         </div>
       </div>
     </main>
+    <script src="app.js"></script>
   </body>
 </html>
