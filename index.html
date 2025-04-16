@@ -63,7 +63,20 @@
     h3{
      margin-left: 9%;
     }
-      
+
+    .responsive-title {
+    font-size: clamp(2rem, 6vw, 5rem);
+    font-weight: 700;
+    white-space: nowrap;
+    }
+
+    .responsive-subtitle {
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    white-space: nowrap;
+    text-align: start;
+    margin-left: 11%;
+    }
+
     main {
       padding-top: 100px; /* Espaço para o menu fixo */
     }
@@ -100,8 +113,8 @@
 
     <main class="container py-8" >
       <div class="text-center col-sm-6 col-lg-3 mb-4 mb-md-0 main-section" style="width: 46%;">
-        <h1 style="font-size: 6vw; white-space: nowrap; font-weight: 700;">Isaac Pereira</h1>
-        <h3 style="font-size: 2rem;white-space: nowrap;text-align:start;">Developer of Systems</h3>
+        <h1 class="responsive-title">Isaac Pereira</h1>
+        <h3 class="responsive-subtitle">Developer of Systems</h3>
       </div>
 
       <div class="row">
