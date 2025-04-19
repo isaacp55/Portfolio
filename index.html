@@ -63,14 +63,14 @@
 
      .developer {
       font-family: monospace;
-      font-size: 2em;
+      font-size: 2rem;
       white-space: nowrap;
       overflow: hidden;
       border-right: 2px solid black;
-      animation: typing 3s steps(20) forwards, blink 0.7s infinite;
-
-      width: 23ch; /* mesmo que na animação */
+      animation: typing 3s steps(30) forwards, blink 0.7s infinite;
+      max-width: 100%;
     }
+
 
     @keyframes typing {
       from {
@@ -128,7 +128,7 @@
 
     <main class="container py-8" >
       <div class="text-center col-sm-0 col-lg-12 col-md-12 main-section justify-content-end">
-       <h6>Olá, Eu sou</h6>
+        <h6>Olá, Eu sou</h6>
         <h4 class="text-center">Isaac Pereira Da Silva</h4>
         <h1 class="developer mx-auto text-center d-block fs-2">Desenvolvedor de Software</h4> 
         </div>
